@@ -1,0 +1,96 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width : 30%;
+    margin : 50px auto;
+
+}
+h1{
+    margin : 10px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin : 5px 0;
+}
+
+form input[type = "text"] , form input[type = "password"]{
+    height : 50px;
+    margin : 5px 0;
+    border : 0.5px solid black;
+    padding : 0 10px;
+    font-size: 1rem;
+}
+
+form a{
+    margin : 10px 0;
+}
+
+button{
+    background-color: rgba(55, 0, 255, 0.707);
+    height : 50px;
+    border : none;
+    margin : 10px 0;
+    color : white;
+    font-size : 1rem;
+    cursor : pointer;
+}
+
+.footer h4{
+    margin : 10px 0;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height : 50px;
+}
+
+.images a{
+    margin : 10px 10px;
+}
+
+.images a i{
+    transform: scale(1.4);
+    color : rgba(55, 0, 255, 0.69);
+    transition: all 250ms ease 0ms;
+}
+
+
+.footer #last{
+    text-align: end;
+    display: block;
+}
+
+.images a i:hover{
+    transform: scale(2.5);
+    color :  rgb(0, 55, 255);
+}
+
+button:hover{
+    background-color: rgba(55, 0, 255);
+}
+a{
+    text-decoration: none;
+}
+
+@media((max-width : 800px) and (min-width : 400px)){
+ .container{
+    width : 60%;
+ }
+}
+
+@media(max-width : 420px){
+    .container{
+        width : 90%;
+    }
+}
